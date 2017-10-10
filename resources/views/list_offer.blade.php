@@ -1,6 +1,9 @@
 <h1> Offers</h1>
 
+@foreach ($offers as $offer)
 <ul>
-    <li> Name : {{ $offer -> name}}</li>
-    <li> Description : {{ $offer ->description}}</li>
+    <li> Name : {{ $offers -> name}}</li>
+    <li> Description : {{ $offers ->description}}</li>
 </ul>
+
+@endforeach

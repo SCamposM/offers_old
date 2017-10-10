@@ -22,11 +22,12 @@ class OffersTest extends TestCase
 
         $offers = factory(Offer::class, 50)->create();
 
-        $response = $this->get('/offers');
+        $response = $this->get('/offers/');
         $response->assertStatus(200);
         $response->assertSuccessful();
         $response->assertViewIs('list_offer');
-       
+
+
 
         //TODO Contar que hi ha 50 el resultat
 
